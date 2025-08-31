@@ -24,6 +24,7 @@ book
 <Book: Nineteen Eighty-Four by George Orwell (1949)>
 
 # Delete Command 
+from bookshelf.models import Book
 book = Book.objects.get(title="1984")
 book.delete()
 
